@@ -507,6 +507,7 @@ class CrossEnvBuilder(venv.EnvBuilder):
 
         if self.host_machine is None:
             platform2uname = {
+                "arm": "armv7l",
                 # On uname.machine=ppc64, _PYTHON_HOST_PLATFORM is linux-powerpc64
                 "powerpc64": "ppc64",
                 # On uname.machine=ppc64le, _PYTHON_HOST_PLATFORM is linux-powerpc64le
